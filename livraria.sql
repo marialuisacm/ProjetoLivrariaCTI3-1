@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28-Set-2022 às 03:21
+-- Tempo de geração: 05-Out-2022 às 03:20
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `biblioteca`
+-- Banco de dados: `livraria2`
 --
 
 -- --------------------------------------------------------
@@ -44,7 +44,8 @@ CREATE TABLE `acervo` (
 
 CREATE TABLE `editora` (
   `codigo_editora` int(11) DEFAULT NULL,
-  `nome_editora` varchar(120) DEFAULT NULL
+  `nome_editora` varchar(120) DEFAULT NULL,
+  `cidade_editora` varchar(120) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -236,3 +237,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
