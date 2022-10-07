@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08-Out-2022 às 01:39
+-- Tempo de geração: 08-Out-2022 às 01:41
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `livraria`
+-- Banco de dados: `projetolivrariamalu`
 --
 
 -- --------------------------------------------------------
@@ -103,17 +103,6 @@ CREATE TABLE `livros` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `localização`
---
-
-CREATE TABLE `localização` (
-  `ID` int(11) NOT NULL,
-  `Nome` varchar(120) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Estrutura da tabela `reserva`
 --
 
@@ -175,12 +164,6 @@ ALTER TABLE `livros`
   ADD PRIMARY KEY (`codigo`);
 
 --
--- Índices para tabela `localização`
---
-ALTER TABLE `localização`
-  ADD PRIMARY KEY (`ID`);
-
---
 -- Índices para tabela `reserva`
 --
 ALTER TABLE `reserva`
@@ -213,12 +196,6 @@ ALTER TABLE `leitores`
 --
 ALTER TABLE `livros`
   MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `localização`
---
-ALTER TABLE `localização`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `reserva`
