@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 05-Out-2022 às 03:20
--- Versão do servidor: 10.4.22-MariaDB
--- versão do PHP: 8.1.2
+-- Tempo de geração: 08-Out-2022 às 01:39
+-- Versão do servidor: 10.4.24-MariaDB
+-- versão do PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `livraria2`
+-- Banco de dados: `livraria`
 --
 
 -- --------------------------------------------------------
@@ -66,7 +66,6 @@ CREATE TABLE `generos` (
 INSERT INTO `generos` (`cod_genero`, `nome_genero`) VALUES
 (1, 'Biografias'),
 (2, 'Literatura'),
-(3, 'Autoajuda'),
 (4, 'Didático'),
 (5, 'Quadrinhos');
 
@@ -237,4 +236,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
